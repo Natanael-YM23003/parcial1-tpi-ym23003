@@ -1,0 +1,11 @@
+services:
+  web:
+    build: 
+      context: .
+    image: imagen
+    container_name: contenedor-parcial
+    restart: always
+    ports:
+    - "8089:80"
+    volumes:
+    - .:/var/www/html  
